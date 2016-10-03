@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
     <application>pixqu-145213</application>
-    <vm>true</vm>
+    <version>1</version>
     <threadsafe>true</threadsafe>
-
-    <beta-settings>
-        <setting name="java_quickstart" value="true"/>
-    </beta-settings>
 </appengine-web-app>
