@@ -5,6 +5,19 @@ runtime_config:
    jdk: openjdk8
    server: jetty9
 
+resources:
+  cpu: .5
+  memory_gb: 1.3
+  disk_size_gb: 10
+
+health_check:
+  enable_health_check: True
+  check_interval_sec: 5
+  timeout_sec: 4
+  unhealthy_threshold: 2
+  healthy_threshold: 2
+  restart_threshold: 60
+
 handlers:
 - url: /.*
   script: this field is required, but ignored
