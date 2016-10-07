@@ -57,7 +57,7 @@
 </head>
 
 <div style="padding: 10px;">
-    <input id="message" type="password"> <input id="testsave" type="button" value="Create new graph" />
+    <input id="message" type="password"> <input id="testsave" type="button" value="Create new graph" /> <br>
 </div>
 
 
