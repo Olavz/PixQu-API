@@ -39,7 +39,7 @@
 
             $("#testsave").click(function() {
                 var m = $("#message").val();
-                websocket.send(message);
+                websocket.send(m);
             });
 
         });
@@ -57,7 +57,7 @@
 </head>
 
 <div style="padding: 10px;">
-    <input id="message"> <input id="testsave" type="button" value="Create new graph" />
+    <input id="message" type="password"> <input id="testsave" type="button" value="Create new graph" />
 </div>
 
 
