@@ -4,6 +4,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,9 +27,9 @@ public class PixQuAPIResource {
     }
 
     @GET
-    @Path("/connected")
+    @Path("/socket/connected")
     public Response getConnected() {
-        return Response.ok("Connected.. " + wss.getConnected()).build();
+        return Response.ok(wss.getConnected(), MediaType.APPLICATION_JSON).build();
     }
 
     @POST

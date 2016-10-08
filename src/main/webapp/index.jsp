@@ -1,65 +1,27 @@
-<!DOCTYPE html>
-
+<%--
+  Created by IntelliJ IDEA.
+  User: Olavz
+  Date: 08.10.2016
+  Time: 02.24
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>document</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript">
-
-        var websocket;
-        var charts = [];
-        $(document).ready(function () {
-            var wsUri = "ws://" + document.location.hostname + ":" + document.location.port + document.location.pathname + "echo";
-            console.log(wsUri);
-            websocket = new WebSocket(wsUri);
-            websocket.onopen = function (evt) {
-                onOpen(evt)
-            };
-            websocket.onmessage = function (evt) {
-                onMessage(evt)
-            };
-            websocket.onerror = function (evt) {
-                onError(evt)
-            };
-
-
-            function onOpen(evt) {
-                chatlogField.innerHTML += evt.data + "\n";
-
-            }
-
-            function onMessage(evt) {
-                console.log(evt.data);
-            }
-
-            function onError(evt) {
-            }
-
-            $("#testsave").click(function() {
-                var m = $("#message").val();
-                websocket.send(m);
-            });
-
-        });
-
-    </script>
-
-    <style type="text/css">
-        body {
-            padding: 0;
-            margin: 0;
-        }
-
-    </style>
-
+    <title>PixQU - Getting started</title>
 </head>
-
-<div style="padding: 10px;">
-    <input id="message" type="password"> <input id="testsave" type="button" value="Create new graph" /> <br>
-</div>
+<body>
+<pre>
 
 
+    Use <a href="test.jsp">test.jsp</a> to simulate active client.
+
+
+    Socket overview
+    Show available clients: <a href="/api/socket/connected">/api/socket/connected</a>
+
+
+
+</pre>
 </body>
 </html>
