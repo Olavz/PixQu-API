@@ -60,15 +60,15 @@
     </dependencies>
 
     <build>
-        <finalName>root</finalName>
+        <!--finalName>root</finalName-->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.0</version>
-                <configuration>
+                <!--configuration>
                     <outputDirectory>C:\DevTools\jetty-distribution-9.3.12.v20160915\webapps\</outputDirectory>
-                </configuration>
+                </configuration-->
             </plugin>
         </plugins>
     </build>
