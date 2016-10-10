@@ -3,19 +3,16 @@ package com.olavz;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-/**
- * Created by Olavz on 10.10.2016.
- */
-public class DOScreenDataTest {
+public class DoScreenDataTest {
 
     private DOScreenData doScreenData;
 
     @Before
     public void createDOScreenDataTest() {
         doScreenData = new DOScreenData();
-        doScreenData.setAction("welcome");
+        doScreenData.setAction("welcomea");
         doScreenData.setAuthor("System");
         doScreenData.setData("Hello World!");
     }
@@ -38,5 +35,4 @@ public class DOScreenDataTest {
         String data = doScreenData.getData();
         assertEquals("Hello World!", data);
     }
-
 }
