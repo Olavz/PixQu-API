@@ -31,7 +31,7 @@ public class DOScreenData {
     }
 
     public String getAction() {
-        return action;
+        return action.toUpperCase();
     }
 
     public void setAction(String action) {
