@@ -12,9 +12,9 @@ public class DoScreenDataTest {
     @Before
     public void createDOScreenDataTest() {
         doScreenData = new DOScreenData();
-        doScreenData.setAction("welcomea");
+        doScreenData.setAction("welcome");
         doScreenData.setAuthor("System");
-        doScreenData.setData("aHello World!");
+        doScreenData.setData("Hello World!");
     }
 
     @Test
