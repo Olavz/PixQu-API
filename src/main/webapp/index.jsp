@@ -68,6 +68,11 @@
 <body>
 <pre>
 
+    ########################################
+    #                                      #
+    #       PixQu API                      #
+    #                                      #
+    ########################################
 
     Use <a href="test.jsp">test.jsp</a> to simulate active client.
 
