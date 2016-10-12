@@ -33,7 +33,7 @@
 <div>
     <div class="endpoint">api/mock/manyPurposeResource</div>
     <div>Code block</div>
-    <button class="ajaxButton" id="btnGet" value="GET" method="GET" />
+    <button class="ajaxButton" id="btnGet" method="GET">TEST</button>
     <div class="results">Results block</div>
 </div>
 
