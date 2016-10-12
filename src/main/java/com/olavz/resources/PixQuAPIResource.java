@@ -1,4 +1,7 @@
-package com.olavz;
+package com.olavz.resources;
+
+import com.olavz.DOScreenData;
+import com.olavz.WebSocketServer;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;

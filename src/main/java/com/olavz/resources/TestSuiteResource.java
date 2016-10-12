@@ -1,4 +1,4 @@
-package com.olavz;
+package com.olavz.resources;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
