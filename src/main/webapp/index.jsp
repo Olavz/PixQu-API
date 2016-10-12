@@ -74,6 +74,8 @@
     #                                      #
     ########################################
 
+    Use <a href="mock">mock/</a> to see mock REST API calls.
+
     Use <a href="test.jsp">test.jsp</a> to simulate active client.
 
 
