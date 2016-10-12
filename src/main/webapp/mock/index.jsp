@@ -8,9 +8,10 @@
 
             $(".ajaxButton").click(function() {
                 var method = $(this).attr('method');
+                var url = $(this).parent().child('.endpoint');
                 $.ajax({
                     method: method,
-                    url: "api/mock/manyPurposeResource",
+                    url: "../" + url,
                     success: function(data) {
                         console.log(data);
                         $(this).parent().child(".results").text = data;
@@ -30,6 +31,7 @@
 1. GET api/mock/manyPurposeResource
 
 <div>
+    <div class="endpoint">api/mock/manyPurposeResource</div>
     <div>Code block</div>
     <button class="ajaxButton" id="btnGet" value="GET" method="GET" />
     <div class="results">Results block</div>
