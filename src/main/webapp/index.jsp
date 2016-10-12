@@ -44,7 +44,7 @@
 
         function randomFrame() {
             var frame = new Object();
-            frame.duration = 500;
+            frame.duration = 1000;
             var data = "";
             for(var i=0; i<40; i++) {
                 if(i>0) {
@@ -79,7 +79,9 @@
     Use <a href="test.jsp">test.jsp</a> to simulate active client.
 
 
-    Socket overview
+    <button id="post_data">Generate random frames</button>
+
+
     Show available clients: <a href="/api/socket/connected">/api/socket/connected</a>
 
 
